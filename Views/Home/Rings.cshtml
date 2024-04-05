@@ -1,0 +1,485 @@
+﻿@* @{
+    ViewData["Title"] = "Gold Jewellery";
+}
+
+<!-- Views/Shared/_Layout.cshtml or any other Razor view -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Other head elements -->
+</head>
+<body>
+    <!-- Your content -->
+
+    <img src="/image/r1.png" alt="d1" width="1300px" height="500px" />
+    <!-- More content -->
+
+
+    <style>
+        .product {
+            justify-content: center;
+            margin-left: 15px;
+           
+        }
+
+        .product-list {
+            margin-left: 50px;
+            display: flex;
+        }
+
+        .l {
+            margin-left: 10px;
+            height: 15px;
+            width: 15px;
+        }
+
+        /* Style for each diamond item */
+        .gold-item {
+            list-style-type: none;
+            margin: 12px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            text-align: center;
+        }
+
+            /* Style for the diamond image */
+            .gold-item img {
+                max-width: 200px; /* Adjust as needed */
+                height: auto;
+                align-items: center;
+            }
+
+        /* Style for the like button */
+
+
+
+        /* Style for the add to cart button */
+        .add-to-cart {
+            display: block;
+            margin-top: 10px;
+            background-color: #cc0d0d; /* Example color */
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 15px; /* Adjust the value as needed for the desired roundness */
+        }
+
+
+            /* Hover effect for add to cart button */
+            .add-to-cart:hover {
+                background-color: #020911; /* Darker shade of the button color */
+            }
+
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+            .image-grid img {
+                width: 100%;
+                height: auto;
+            }
+    </style>
+    <div class="product"> 
+        <div> 
+            <ul class="product-list"> 
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/r2.png" alt="Golden Bracelet">
+                    </a>
+                        <h6>Golden Bracelet</h6> 
+                        <div class="price">Rs. 30,000</div>
+                    <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+               </li> 
+
+                       <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/r3.png" alt="Golden Bracelet">
+                    </a>
+                        <h6>Golden Bracelet</h6> 
+                        <div class="price">Rs. 30,000</div>
+                    <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                </li> 
+                    
+                       <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/r4.png" alt="Golden Bracelet">
+                    </a>
+                        <h6>Golden Bracelet</h6> 
+                        <div class="price">Rs. 30,000</div>
+                    <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+                  </li>
+
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/r5.png" alt="Golden Bracelet">
+                    </a>
+                    <h6>Golden Bracelet</h6>
+                    <div class="price">Rs. 30,000</div>
+                    <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+              </li>
+                </ul>
+                </div>
+                <div>
+                    <ul class="product-list">
+                        <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/r6.png" alt="Golden Bracelet">
+                    </a>
+                    <h6>Golden Bracelet</h6>
+                    <div class="price">Rs. 30,000</div>
+                    <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+               </li>
+
+
+
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/r7.png" alt="Golden Bracelet">
+                        </a>
+                        <h6>Golden Bracelet</h6> 
+                        <div class="price">RS. 30,000</div>
+                    <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <a href="#" class="add-to-cart">Add to Cart</a>
+               </li> 
+
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/r8.png" alt="Golden Bracelet">
+                    </a>
+                    <h6>Golden Bracelet</h6>
+                    <div class="price">Rs. 30,000</div>
+                    <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+               </li>
+
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/r9.png" alt="Golden Bracelet">
+                    </a>
+                    <h6>Golden Bracelet</h6>
+                    <div class="price">Rs. 30,000</div>
+                    <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                    <a href="#" class="add-to-cart">Add to Cart</a>
+              </li>
+
+            </ul> 
+        </div>
+    </div>
+    
+
+   
+
+</body>
+</html>
+
+ *@
+
+
+@{
+    ViewData["Title"] = "Gold Jewellery";
+}
+
+<!-- Views/Shared/_Layout.cshtml or any other Razor view -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Other head elements -->
+</head>
+<body>
+    <!-- Your content -->
+
+    <img src="/image/r1.png" alt="d1" width="1300px" height="500px" />
+    <!-- More content -->
+
+
+    <style>
+        .product {
+            justify-content: center;
+            margin-left: 15px;
+        }
+
+        .product-list {
+            margin-left: 50px;
+            display: flex;
+        }
+
+        .l {
+            margin-left: 10px;
+            height: 15px;
+            width: 15px;
+        }
+
+        /* Style for each diamond item */
+        .gold-item {
+            list-style-type: none;
+            margin: 12px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            text-align: center;
+        }
+
+            /* Style for the diamond image */
+            .gold-item img {
+                max-width: 200px; /* Adjust as needed */
+                height: auto;
+                align-items: center;
+            }
+
+        /* Style for the like button */
+
+
+
+        /* Style for the add to cart button */
+        .add-to-cart {
+            display: block;
+            margin-top: 10px;
+            background-color: #cc0d0d; /* Example color */
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 15px; /* Adjust the value as needed for the desired roundness */
+        }
+
+
+            /* Hover effect for add to cart button */
+            .add-to-cart:hover {
+                background-color: #020911; /* Darker shade of the button color */
+            }
+
+
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 5px 10px;
+            margin-top: 10px;
+            background-color: #cc0d0d;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+            button[type="submit"]:hover {
+                background-color: #000;
+            }
+
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+            .image-grid img {
+                width: 100%;
+                height: auto;
+            }
+    </style>
+    <form asp-action="Add" method="post">
+        <div class="product">
+            @*  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> *@
+            <div>
+                <ul class="product-list">
+
+
+
+
+
+
+
+                    <li class="gold-item">
+                        <a class="gold-bracelet" href="#">
+                            <img src="/image/r2.png" alt="Golden Bracelet">
+                        </a>
+                        <h6>Golden Bracelet</h6>
+                        <div class="price">Rs. 30,000</div>
+                        <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <input type="hidden" name="Name" value="Golden Bracelet" />
+                        <input type="hidden" name="Price" value="30000" />
+                        <input type="hidden" name="ImageUrl" value="/image/r2.png">
+                        <button type="submit">Add To Cart</button>
+                    </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <li class="gold-item">
+                        <a class="gold-bracelet" href="#">
+                            <img src="/image/r3.png" alt="Golden Bracelet">
+                        </a>
+                        <h6>Golden Bracelet</h6>
+                        <div class="price">Rs. 30,000</div>
+                        <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <input type="hidden" name="Name" value="Golden Bracelet" />
+                        <input type="hidden" name="Price" value="30000" />
+                        <input type="hidden" name="ImageUrl" value="/image/r3.png">
+                        <button type="submit">Add To Cart</button>
+                    </li>
+
+                    <li class="gold-item">
+                        <a class="gold-bracelet" href="#">
+                            <img src="/image/r4.png" alt="Golden Bracelet">
+                        </a>
+                        <h6>Golden Bracelet</h6>
+                        <div class="price">Rs. 30,000</div>
+                        <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <input type="hidden" name="Name" value="Golden Bracelet" />
+                        <input type="hidden" name="Price" value="30000" />
+                        <input type="hidden" name="ImageUrl" value="/image/r4.png">
+                        <button type="submit">Add To Cart</button>
+                    </li>
+
+                    <li class="gold-item">
+                        <a class="gold-bracelet" href="#">
+                            <img src="/image/r5.png" alt="Golden Bracelet">
+                        </a>
+                        <h6>Golden Bracelet</h6>
+                        <div class="price">Rs. 30,000</div>
+                        <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <input type="hidden" name="Name" value="Golden Bracelet" />
+                        <input type="hidden" name="Price" value="30000" />
+                        <input type="hidden" name="ImageUrl" value="/image/r5.png">
+                        <button type="submit">Add To Cart</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="product-list">
+
+
+                    <li class="gold-item">
+                        <a class="gold-bracelet" href="#">
+                            <img src="/image/r6.png" alt="Golden Bracelet">
+                        </a>
+                        <h6>Golden Bracelet</h6>
+                        <div class="price">Rs. 30,000</div>
+                        <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <input type="hidden" name="Name" value="Golden Bracelet" />
+                        <input type="hidden" name="Price" value="30000" />
+                        <input type="hidden" name="ImageUrl" value="/image/r6.png">
+                        <button type="submit">Add To Cart</button>
+                    </li>
+
+
+
+                    <li class="gold-item">
+                        <a class="gold-bracelet" href="#">
+                            <img src="/image/r7.png" alt="Golden Bracelet">
+                        </a>
+                        <h6>Golden Bracelet</h6>
+                        <div class="price">Rs. 30,000</div>
+                        <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <input type="hidden" name="Name" value="Golden Bracelet" />
+                        <input type="hidden" name="Price" value="30000" />
+                        <input type="hidden" name="ImageUrl" value="/image/r7.png">
+                        <button type="submit">Add To Cart</button>
+                    </li>
+
+                    <li class="gold-item">
+                        <a class="gold-bracelet" href="#">
+                            <img src="/image/r8.png" alt="Golden Bracelet">
+                        </a>
+                        <h6>Golden Bracelet</h6>
+                        <div class="price">Rs. 30,000</div>
+                        <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <input type="hidden" name="Name" value="Golden Bracelet" />
+                        <input type="hidden" name="Price" value="30000" />
+                        <input type="hidden" name="ImageUrl" value="/image/r8.png">
+                        <button type="submit">Add To Cart</button>
+                    </li>
+
+                    <li class="gold-item">
+                        <a class="gold-bracelet" href="#">
+                            <img src="/image/r9.png" alt="Golden Bracelet">
+                        </a>
+                        <h6>Golden Bracelet</h6>
+                        <div class="price">Rs. 30,000</div>
+                        <a href="#"><img src="/image/like.png" alt="Like" width="20px" height="20px"></a>
+                        <input type="hidden" name="Name" value="Golden Bracelet" />
+                        <input type="hidden" name="Price" value="30000" />
+                        <input type="hidden" name="ImageUrl" value="/image/r9.png">
+                        <button type="submit">Add To Cart</button>
+                    </li>
+
+
+
+
+
+                    @*  <script>
+                    $(document).ready(function () {
+                    $('.add-to-cart').click(function () {
+                    var imageUrl = $(this).closest('.gold-item').find('img').attr('src');
+                    var name = $(this).closest('.gold-item').find('h6').text();
+                    var price = $(this).closest('.gold-item').find('.price').text().replace('Rs. ', '').trim();
+
+                    var Product = {
+                    imageUrl: imageUrl,
+                    name: name,
+                    price: parseFloat(price)
+                    };
+
+                    $.ajax({
+                    type: "POST",
+                    url: "/Home/AddToCart",
+                    data: JSON.stringify(Product),
+                    contentType: "application/json",
+                    success: function (response) {
+                    if (response.success) {
+                    alert("Product added to cart successfully!");
+                    } else {
+                    alert("Error occurred while adding product to cart!");
+                    }
+                    },
+                    error: function (xhr, status, error) {
+                    alert("Error occurred while adding product to cart!");
+                    }
+                    });
+                    });
+                    });
+                    </script> *@
+
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,184 @@
+﻿@* @{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<!-- Views/Shared/_Layout.cshtml or any other Razor view -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Other head elements -->
+</head>
+<body>
+    <!-- Your content -->
+
+    <img src="/image/fh1.png" Width="1300px" Height="500px" />
+    <!-- More content -->
+    <div>
+        <h1>Gemify Specials</h1>
+    </div>
+    <div>
+        <img src="/image/h5.png" ,Width="348px" ,Height="136px" />
+        <img src="/image/h6.png" ,Width="348px" ,Height="136px" />
+    </div>
+</body>
+</html>
+ *@
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<style>
+    .gemify {
+        text-align: center;
+    }
+
+    .image5 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 350px;
+        border-radius: 25px;
+        padding: 40px;
+    }
+
+        .product {
+            justify-content: center;
+            margin-left: 15px;
+           
+        }
+
+        .product-list {
+            margin-left: 50px;
+            display: flex;
+        }
+
+        .l {
+            margin-left: 10px;
+            height: 15px;
+            width: 15px;
+        }
+
+        /* Style for each diamond item */
+        .gold-item {
+            list-style-type: none;
+            margin: 12px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            text-align: center;
+        }
+
+            /* Style for the diamond image */
+            .gold-item img {
+                max-width: 200px; /* Adjust as needed */
+                height: auto;
+                align-items: center;
+            }
+
+        /* Style for the like button */
+
+
+
+        /* Style for the add to cart button */
+        .add-to-cart {
+            display: block;
+            margin-top: 10px;
+            background-color: #cc0d0d; /* Example color */
+            color: #fff;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 15px; /* Adjust the value as needed for the desired roundness */
+        }
+
+
+            /* Hover effect for add to cart button */
+            .add-to-cart:hover {
+                background-color: #020911; /* Darker shade of the button color */
+            }
+
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+            .image-grid img {
+                width: 100%;
+                height: auto;
+            }
+
+
+  
+
+</style>
+<!-- Views/Shared/_Layout.cshtml or any other Razor view -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Other head elements -->
+</head>
+<body>
+    <!-- Your content -->
+
+    <img src="/image/fh1.png" Width="1300px" Height="500px" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- More content -->
+    <div class="gemify">
+        <h1>Gemify Specials</h1>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+
+    <div class="product">
+        <div>
+            <ul class="product-list">
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/fh2.jpeg" alt="Golden Bracelet">
+                    </a>
+                   
+                </li>
+
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/fh3.jpeg" alt="Golden Bracelet">
+                    </a>
+               
+                </li>
+
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/fh4.jpeg" alt="Golden Bracelet">
+                    </a>
+              
+                </li>
+
+                <li class="gold-item">
+                    <a class="gold-bracelet" href="#">
+                        <img src="/image/fh5.jpeg" alt="Golden Bracelet">
+                    </a>
+           
+                </li>
+            </ul>
+        </div>
+
+    <br />
+    <br />
+    <div class="image5">
+        <img src="/image/h5.png" ,Width="600px" ,Height="270px" />
+        <img src="/image/h6.png" ,Width="600px" ,Height="270px" />
+    </div>
+</body>
+</html>

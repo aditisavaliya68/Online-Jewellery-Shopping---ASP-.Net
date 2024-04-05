@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gemify</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Gemify.styles.css" asp-append-version="true" />
+
+    
+    <!-- ... -->
+    <style>
+        .navbar-gemify .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+       
+
+        .navbar-gemify .navbar-nav .nav-link {
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+        }
+
+        .navbar-gemify .navbar-nav .dropdown-menu {
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-gemify .navbar-nav .dropdown-menu .dropdown-item {
+            padding: 0.5rem 1.5rem;
+            font-weight: 400;
+        }
+
+        .navbar-gemify .navbar-nav .dropdown-menu .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .navbar-gemify .navbar-brand img {
+            height: 3rem;
+        }
+
+        .navbar-gemify .form-inline {
+            width: auto;
+            margin-left: 1rem;
+        }
+
+            .navbar-gemify .form-inline input {
+                border-radius: 2rem;
+                padding: 0.25rem 1rem;
+            }
+
+    </style>
+</head>
+
+<body>
+<header>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white navbar-gemify border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="/image/logo.png" alt="Gemify Logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input asp-action="searchByName" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                    <!-- ... (previous navbar content) ... -->
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Login">
+                                <span>
+                                   <img src="~/image/account.jpeg" alt="Account" height="30px" width="30px" ><h6></h6>Account</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Wishlist">
+                                <span><img src="~/image/wishlist.jpeg" alt="Account" height="30px" width="30px" ><h6></h6>Wishlist</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Cart">
+                                <span><img src="~/image/cart.jpeg" alt="Account" height="30px" width="30px" ><h6></h6>Cart</span>
+
+                            </a>
+                        </li>
+                    </ul>                  
+                </div>
+            </div>
+            </nav>
+
+
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white navbar-gemify border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+             
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop by Category</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-action="Rings" asp-controller="Home">Rings</a></li>
+                                <li><a class="dropdown-item" asp-action="Pandants" asp-controller="Home">Pendants</a></li>
+                                <li><a class="dropdown-item" asp-action="Bracelet" asp-controller="Home">Bracelets</a></li>
+                                <li><a class="dropdown-item" asp-action="Earrings" asp-controller="Home">Earrings</a></li>
+                            </ul>
+                        </li> 
+   
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Gold">Gold Jewellery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Silver">Silver Jewellery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Diamond">Diamond Jewellery</a>
+                        </li>
+                   
+              
+
+
+
+
+
+
+
+
+                </ul>
+                   </ul>
+                </div>
+            </div>
+      
+        </nav>
+
+
+
+
+        
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+@*    @*  <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Gemify - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html> 
+
+
+
+

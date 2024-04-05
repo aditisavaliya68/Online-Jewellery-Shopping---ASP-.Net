@@ -1,0 +1,71 @@
+﻿@* @{
+    ViewData["Title"] = "Gold Jewellery";
+}
+
+<!-- Views/Shared/_Layout.cshtml or any other Razor view -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Other head elements -->
+</head>
+<body>
+
+    <style>
+
+    </style>
+
+    <!-- Your content -->
+
+    <img src="/image/c1.png" alt="d1" />
+    <div>
+        <h1>Your Cart is empty.</h1>
+        <h4>Let's fill it with some jewellery.</h4>
+    </div>
+    <!-- More content -->
+
+
+
+
+</body>
+</html>
+ *@
+
+
+ @model List<Product>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+</head>
+<body>
+    <h1>Product List</h1>
+
+    <table>
+        <thead>
+            <tr>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <div>
+                    <h2>@product.Name</h2>
+                    <p>Price: @product.Price</p>
+                    <img src="@product.ImageUrl" alt="@product.Name" />
+                    <form asp-action="Delete" asp-route-id="@product.ProductId" method="post">
+                        <button type="submit">Remove Product</button>
+                    </form>
+                </div>
+
+                
+            }
+        </tbody>
+
+        <form asp-action="DeleteAll" method="post">
+            <button type="submit">Empty Cart</button>
+        </form>
+    </table>
+</body>
+</html>
